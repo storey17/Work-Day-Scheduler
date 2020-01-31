@@ -3,6 +3,7 @@ $(document).ready(function() {
 // WHEN I open the planner
 // THEN the current day is displayed at the top of the calendar
     $("#currentDay").append(new Date());
+    // console.log($("#currentDay").append(new Date()));
     var currentTime = new Date().getHours(); 
 
 // WHEN I scroll down
@@ -32,7 +33,7 @@ $("textarea").each(function(i) {
 
 $( ".saveBtn" ).click(function() {
     var timeBlock = $(this).attr("data-time");
-    var $("textarea[data-attribute='"+timeBlock+"']")
+    // var $("textarea[data-attribute='"+timeBlock+"']")
 
     var textAreaInput = $("textarea").val()
     console.log(textAreaInput);

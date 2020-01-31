@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  margin-bottom: 45px;
 }
 
 textarea{
@@ -41,7 +42,18 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  padding: 30px;
 }
+
+@media only screen and (min-width: 768px) {
+.hour {
+  padding: 0px;
+}}
+
+@media only screen and (max-width: 600px) {
+  .hour {
+    padding: 0px;
+    }}
 
 .past {
   background-color: #d3d3d3;
@@ -49,12 +61,12 @@ textarea{
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: black;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: black;
 }
 
 .saveBtn {
